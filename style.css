@@ -1,0 +1,62 @@
+body{
+    margin: 15px;
+}
+
+div {
+    font-size: 25;
+}
+
+#inventory {
+    border: solid black 1px;
+    width: 250px;
+    height: 250px;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    background-color: lightgray;
+}
+
+#inventory > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    place-self: center;
+    width: 50%;
+}
+
+button {
+    background-color: lightgreen;
+    box-shadow: 5px 5px 25px grey;
+    width: 260px;
+    padding: 8px; 
+    border-radius: 10px;
+    left: 1%
+    
+}
+    
+
+#clrBtn {
+    background-color: grey;
+    box-shadow: 5px 5px 25px grey;
+    width: 260px;
+    padding: 8px; 
+    border-radius: 10px;
+    left: 1%
+    
+}
+    
+
+
+img.pære{
+    width:70px;
+}
+img.appelsin{
+    width: 100px;
+}
+img.banan{
+    width: 50px;
+}
+img.eple{
+    width: 100px;
+}
