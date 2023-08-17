@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gruppeoppgave1</title>
     <link rel="stylesheet" href="style.css">
+    <link >
 </head>
 <body>
 
-
+<h1 id="tittel"> Fruktkurv</h1>
 <div id="inventory">
     <!-- div#item$*x (x = antallet som trengs) -->
     <div id="item1"><img id="bilde1" class="banan"src="https://cdn.discordapp.com/attachments/1135484613872062464/1141332547922567168/bananAnsikt_transparent.png" style="display: none"></div>  
@@ -25,16 +26,13 @@
     <button onclick="visFrukt('bilde3')">Pære</button>
     <button onclick="visFrukt('bilde4')">Eple</button>
 
-    <button id="clrBtn" onclick="hideFruit()">Clear</button>
+    <button id="clrBtn" onclick="hideFruit()">Skjul Frukt</button>
+
+    <button id="changeColor" onclick="changeColor()">Natt modus</button>
 </div>
 
 
-<!-- <div id="pictures">
-    <img id="bilde1" class="banan"src="https://cdn.discordapp.com/attachments/1135484613872062464/1141332547922567168/bananAnsikt_transparent.png"> 
-    <img id="bilde2" class="appelsin"src="https://cdn.discordapp.com/attachments/1135484613872062464/1141333596439847013/appelsin-removebg-preview.png">
-    <img id="bilde3" class="pære"src="https://cdn.discordapp.com/attachments/1135484613872062464/1141337837468393472/pre-removebg-preview-removebg-preview.png"> 
-    <img id="bilde4" class="eple"src="https://cdn.discordapp.com/attachments/1135484613872062464/1141334101685710920/eple-removebg-preview.png">
-</div> -->
+
 <script src="app.js"></script>
 
 </body>

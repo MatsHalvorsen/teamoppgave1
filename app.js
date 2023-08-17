@@ -15,21 +15,13 @@
 // }
 
 
-function visesBilde(bilde) {
-    if (document.getElementById(bilde).style.display = "block") {
-        return 1
-    }
-    else {
-        return 0
-    }
-}
 
 function visFrukt(bilde) {
-    if (visesBilde(bilde) == 1) {
-        document.getElementById(bilde).style.display = "none";
+    if (document.getElementById(bilde).style.display == "none") {
+        document.getElementById(bilde).style.display = "inline";
     }
     else {
-        document.getElementById(bilde).style.display = "block";
+        document.getElementById(bilde).style.display = "none";
     }
 }
 
@@ -41,7 +33,27 @@ function hideFruit(){
     document.getElementById('bilde3').style.display = "none";
     document.getElementById('bilde4').style.display = "none";
 
+    // for (let i = 1; document.getElementById('bilde' + i); i++) {
+    //     document.getElementById('bilde' + i).style.display = "none";
+    // }
+
 }
+let daynight = 1; // 1 day, 0 night
+/* endre farge */
+function changeColor(){
+    if (daynight == 1) {
+        document.body.style.background = 'white';
+        document.getElementById('tittel').style.color = 'black';
+    }
+    else if (daynight == 0) {
+        document.body.style.background = 'darkblue';
+        document.getElementById('tittel').style.color = 'white';
+    }
+}
+
+
+
+
 
 
 

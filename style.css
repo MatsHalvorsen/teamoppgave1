@@ -1,20 +1,32 @@
 body{
-    margin: 15px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgrey;
 }
-
+h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
 div {
     font-size: 25;
 }
 
 #inventory {
     border: solid black 1px;
-    width: 250px;
-    height: 250px;
+    width: 550px;
+    height: 550px;
     display: grid;
     justify-self: center;
     align-items: center;
     grid-template-columns: auto auto;
     background-color: lightgray;
+    background-image: url(/kurv.png);
+    
 }
 
 #inventory > div {
@@ -30,33 +42,42 @@ button {
     box-shadow: 5px 5px 25px grey;
     width: 260px;
     padding: 8px; 
-    border-radius: 10px;
-    left: 1%
-    
+    border-radius: 20px;
+    position: relative;
+    left: 3px;
+    margin: 5px;
+
 }
     
+#buttons {
+    grid-template-columns: auto auto;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+
+}
 
 #clrBtn {
-    background-color: grey;
+    background-color: rgb(225, 56, 56);
     box-shadow: 5px 5px 25px grey;
     width: 260px;
     padding: 8px; 
-    border-radius: 10px;
-    left: 1%
+    border-radius: 20px;
+    
     
 }
     
 
 
 img.pære{
-    width:70px;
+    width:120px;
 }
 img.appelsin{
-    width: 100px;
+    width: 140px;
 }
 img.banan{
-    width: 50px;
+    width: 80px;
 }
 img.eple{
-    width: 100px;
+    width: 140px;
 }
