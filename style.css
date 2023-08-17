@@ -25,7 +25,7 @@ div {
     align-items: center;
     grid-template-columns: auto auto;
     background-color: lightgray;
-    background-image: url(/kurv.png);
+    background-image: url(kurv.png);
     
 }
 
