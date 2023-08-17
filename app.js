@@ -42,17 +42,29 @@ let daynight = 1; // 1 day, 0 night
 /* endre farge */
 function changeColor(){
     if (daynight == 1) {
-        document.body.style.background = 'white';
+        document.body.style.background = 'lightgray';
         document.getElementById('tittel').style.color = 'black';
+        daynight = 0;
     }
-    else if (daynight == 0) {
+    else {
         document.body.style.background = 'darkblue';
         document.getElementById('tittel').style.color = 'white';
+        daynight = 1;
     }
 }
 
 
+/*function checkTime() {
+    const time = new Date().getHours();
+    const dayNightChange = 8; // the hour night changes to day
 
+    if (time < dayNightChange) {
+        return 0;
+    }
+    else {
+        return 1;
+    }
+}*/
 
 
 
